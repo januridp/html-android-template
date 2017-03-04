@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Gravity</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/css/animsition.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.red-green.min.css">  
+    <link rel="stylesheet" href="css/swipebox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+    <div class="animsition">
+      <!-- Header -->
+      <header class="mdl-layout__header mdl-layout__header--waterfall transparent-header no-drawer">
+        <div class="mdl-layout__header-row">
+          <a class="mdl-button mdl-js-button mdl-button--icon" href="media.html">
+            <i class="material-icons">arrow_back</i>
+          </a>
+          <!-- Title -->
+          <span class="mdl-layout-title">Now Playing</span>
+        </div>
+      </header>
+
+      <!-- Page Content -->
+      <main class="mdl-layout__content mdl-color--white">    
+        <img src="img/face.jpg" alt=""> <!-- album cover -->
+
+        <div class="player-info mdl-color--primary-dark"> <!-- album information -->
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+            <i class="material-icons">repeat</i>
+          </button>
+          <h4>Blue Love</h4> 
+          <span>Bob & The Band</span>        
+        </div>
+
+        <!-- progress bar -->
+        <div id="p3" class="mdl-progress mdl-js-progress" style="width:80%;"></div>
+
+        <!-- player controls -->
+        <div class="player-controls mdl-color--primary mdl-typography--text-center">
+          <button class="mdl-button mdl-js-button mdl-button--icon left">
+            <i class="material-icons">fast_rewind</i>
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">play_arrow</i>
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--icon right">
+            <i class="material-icons">fast_forward</i>
+          </button>
+        </div>
+
+        <!-- album song list -->
+       <div class="player-contents"> <!-- playing now list -->
+            <p><strong>Up Next</strong>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
+              MORE
+            </button>
+            </p>
+            <ul>
+              <li>1 True Love 
+                <a href="player.html" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+              <li>2 What a Blue
+                <a href="player.html" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+              <li>3 Do Better
+                <a href="player.html" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+              <li>4 Blue Blood
+                <a href="player.html" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+              <li>5 Giant Three
+                <a href="player.html" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+              <li>6 I'm Selfish
+                <a href="player.html" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        
+      </main>
+    </div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/js/jquery.animsition.js"></script>
+    <script src="js/sweetalert.min.js"></script> 
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script src="js/function.js"></script>
+    <!-- call progress bar -->
+    <script> 
+      document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+        this.MaterialProgress.setProgress(75);
+        this.MaterialProgress.setBuffer(90);
+      });
+    </script>
+  </body>
+</html>

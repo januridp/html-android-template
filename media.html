@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Gravity</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/css/animsition.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.red-green.min.css">  
+    <link rel="stylesheet" href="css/swipebox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="animsition">
+      <!-- Header -->
+      <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
+          <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Media</span>
+            <!-- Spacer -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Right Menu -->
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+              <label class="mdl-button mdl-js-button mdl-button--icon"
+                     for="waterfall-exp">
+                <i class="material-icons">search</i>
+              </label>
+              <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="text" name="sample"
+                       id="waterfall-exp" />
+              </div>
+            </div>
+          </div>
+          <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Music</a>
+            <a href="#scroll-tab-2" class="mdl-layout__tab">Video</a>
+          </div>
+        </header>
+        <!-- Sidebar -->
+        <div class="mdl-layout__drawer">
+          <!-- Top -->
+          <div class="mdl-card mdl-shadow--2dp mdl-color--primary mdl-color-text--blue-grey-50 drawer-profile">
+            <div class="mdl-card__title user">
+              <img src="img/user.jpg" alt="" />
+              <span class="user-name">Jonathan Lee</span>
+              <span class="user-mail">jonathan@email.com</span>
+              <button id="user-menu" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">arrow_drop_down</i>
+              </button>
+            </div>
+            <!-- Top-right User -->
+            <div class="mdl-card__menu">
+              <img class="sub-user" src="img/sub-user.jpg" alt="" />
+            </div>
+          </div>
+          <!-- Dropdown Menu -->
+          <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="user-menu">
+            <li class="mdl-menu__item">hello@email.com</li>
+            <li class="mdl-menu__item">info@domain.net</li>
+            <li class="mdl-menu__item">Add another account...</li>
+          </ul>
+          <!-- Main Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link animsition-link" href="index.html"><i class="material-icons">home</i><span>Home</span></a>
+            <a class="mdl-navigation__link animsition-link" href="profile.html"><i class="material-icons">account_circle</i><span>Profile</span></a>
+            <div class="mdl-collapse">
+                <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">image</i>
+                    <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+                    <span>Gallery</span>
+                </a>
+                <div class="mdl-collapse__content-wrapper">
+                  <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
+                    <a class="mdl-navigation__link animsition-link" href="grid.html">Grid</a>
+                    <a class="mdl-navigation__link animsition-link" href="masonry.html">Masonry</a>
+                  </div>
+                </div>
+            </div>
+            <div class="mdl-collapse">
+                <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">library_books</i>
+                    <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+                    <span>Blog</span>
+                </a>
+                <div class="mdl-collapse__content-wrapper">
+                  <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
+                    <a class="mdl-navigation__link animsition-link" href="blog.html">Category</a>
+                    <a class="mdl-navigation__link animsition-link" href="article.html">Article</a>
+                  </div>
+                </div>
+            </div>
+            <a class="mdl-navigation__link animsition-link" href="media.html"><i class="material-icons">queue_music</i><span>Media</span></a>
+            <div class="drawer-separator"></div>
+            <div class="mdl-collapse">
+                <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">apps</i>
+                    <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+                    <span>App</span>
+                </a>
+                <div class="mdl-collapse__content-wrapper">
+                  <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
+                    <a class="mdl-navigation__link animsition-link" href="login.html">Login</a>
+                    <a class="mdl-navigation__link animsition-link" href="messages.html">Messages</a>
+                    <a class="mdl-navigation__link animsition-link" href="calendar.html">Calendar</a>
+                    <a class="mdl-navigation__link animsition-link" href="settings.html">Settings</a>
+                  </div>
+                </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Page Content -->
+        <main class="mdl-layout__content mdl-color--white">
+        <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1"> <!-- first tab -->
+
+          <div class="player-featured">  <!-- most watched -->
+            <p><strong>Most Watched</strong>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
+              MORE
+            </button>
+            </p>
+            <iframe style="padding: 16px 0;height:250px;" src="https://www.youtube.com/embed/rrT6v5sOwJg" allowfullscreen></iframe>
+          </div>  
+
+          <div class="player-featured"> <!-- featured cards -->
+            <p><strong>Featured</strong>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
+              MORE
+            </button>
+            </p>
+
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--4-col">
+                <div class="mdl-card mdl-shadow--2dp">
+                  <img src="img/5.jpg" alt="" />
+                  <span><strong>Jim</strong></span>
+                  <span>Long Trip</span>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--4-col">
+                <div class="mdl-card mdl-shadow--2dp">
+                  <img src="img/2.jpg" alt="" />
+                  <span><strong>Rob</strong></span>
+                  <span>Seaside</span>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--4-col">
+                <div class="mdl-card mdl-shadow--2dp">
+                  <img src="img/3.jpg" alt="" />
+                  <span><strong>Sam</strong></span>
+                  <span>Party</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="player-contents"> <!-- playing now list -->
+            <p><strong>Playing Now</strong>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
+              MORE
+            </button>
+            </p>
+            <ul>
+              <li>1 True Love 
+                <a href="player.html" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+              <li>2 What a Blue
+                <a href="player.html" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+              <li>3 Do Better
+                <a href="player.html" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+              <li>4 Blue Blood
+                <a href="player.html" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+              <li>5 Giant Three
+                <a href="player.html" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+              <li>6 I'm Selfish
+                <a href="player.html" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="playing-now mdl-shadow--8dp"> <!-- fixed bottom player -->
+            <img src="img/face.jpg" alt="" />
+            <span><strong>John Lee</strong> / Wave
+            <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">pause</i>
+            </button>
+            </span>
+          </div>
+
+        </section>
+
+        <section class="mdl-layout__tab-panel" id="scroll-tab-2"> <!-- tab 2 -->
+          
+          <div class="player-featured">
+            <p><strong>Featured</strong>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
+              MORE
+            </button>
+            </p>
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--4-col">
+                <div class="mdl-card mdl-shadow--2dp">
+                  <img src="img/5.jpg" alt="" />
+                  <span><strong>Jim</strong></span>
+                  <span>Long Trip</span>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col">
+                <div class="mdl-card mdl-shadow--2dp">
+                  <img src="img/2.jpg" alt="" />
+                  <span><strong>Rob</strong></span>
+                  <span>Seaside</span>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col">
+                <div class="mdl-card mdl-shadow--2dp">
+                  <img src="img/3.jpg" alt="" />
+                  <span><strong>Sam</strong></span>
+                  <span>Party</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="player-featured">
+            <p><strong>Most Watched</strong>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
+              MORE
+            </button>
+            </p>
+             <iframe style="padding: 16px 0;height:250px;" src="https://www.youtube.com/embed/rrT6v5sOwJg" allowfullscreen></iframe>
+          </div> 
+
+          <div class="player-contents">
+            <p><strong>Playing Now</strong>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
+              MORE
+            </button>
+            </p>
+            <ul>
+            <li>1 Big Love 
+              <a class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </a>
+            </li>
+            <li>2 What a Shame
+              <a class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </a>
+            </li>
+            <li>3 Do Yourself
+              <a class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </a>
+            </li>
+            <li>4 Blue Blood
+              <a class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </a>
+            </li>
+            <li>5 Giant Three
+              <a class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </a>
+            </li>
+            <li>6 I'm Selfish
+              <a class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </a>
+            </li>
+            </ul>
+          </div>
+
+          <div class="playing-now mdl-shadow--8dp">
+            <img src="img/face.jpg" alt="" />
+            <span><strong>Jamie Lidell</strong> / Wave
+            <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">pause</i>
+            </button>
+            </span>
+          </div>
+        
+        </section>
+      </main>
+    </div>
+    </div>
+    
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/js/jquery.animsition.js"></script>
+    <script src="js/sweetalert.min.js"></script> 
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script src="js/function.js"></script>
+  </body>
+</html>

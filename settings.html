@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Gravity</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/css/animsition.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.red-green.min.css">  
+    <link rel="stylesheet" href="css/swipebox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+    <div class="animsition">
+      <!-- Header -->
+      <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
+          <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Settings</span>
+            <!-- Spacer -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Right Menu -->
+            <button id="top-header-menu" class="mdl-button mdl-js-button mdl-button--icon">
+              <i class="material-icons">more_vert</i>
+            </button>
+          </div>
+        </header>
+        <!-- Top-right Dropdown Menu -->
+        <div class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="top-header-menu">
+          <a href="login.html" class="animsition-link"><span class="mdl-menu__item">Login</span></a>
+          <a href="messages.html" class="animsition-link"><span class="mdl-menu__item mdl-badge" data-badge="4">Messages</span></a>
+          <a href="player.html" class="animsition-link"><span class="mdl-menu__item">Player</span></a>
+          <a href="calendar.html" class="animsition-link"><span class="mdl-menu__item">Calendar</span></a>
+          <a href="settings.html" class="animsition-link"><span class="mdl-menu__item">Settings</span></a>
+        </div>
+        <!-- Sidebar -->
+        <div class="mdl-layout__drawer">
+          <!-- Top -->
+          <div class="mdl-card mdl-shadow--2dp mdl-color--primary mdl-color-text--blue-grey-50 drawer-profile">
+            <div class="mdl-card__title user">
+              <img src="img/user.jpg" alt="" />
+              <span class="user-name">Jonathan Lee</span>
+              <span class="user-mail">jonathan@email.com</span>
+              <button id="user-menu" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">arrow_drop_down</i>
+              </button>
+            </div>
+            <!-- Top-right User -->
+            <div class="mdl-card__menu">
+              <img class="sub-user" src="img/sub-user.jpg" alt="" />
+            </div>
+          </div>
+          <!-- Dropdown Menu -->
+          <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="user-menu">
+            <li class="mdl-menu__item">hello@email.com</li>
+            <li class="mdl-menu__item">info@domain.net</li>
+            <li class="mdl-menu__item">Add another account...</li>
+          </ul>
+          <!-- Main Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link animsition-link" href="index.html"><i class="material-icons">home</i><span>Home</span></a>
+            <a class="mdl-navigation__link animsition-link" href="profile.html"><i class="material-icons">account_circle</i><span>Profile</span></a>
+            <div class="mdl-collapse">
+                <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">image</i>
+                    <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+                    <span>Gallery</span>
+                </a>
+                <div class="mdl-collapse__content-wrapper">
+                  <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
+                    <a class="mdl-navigation__link animsition-link" href="grid.html">Grid</a>
+                    <a class="mdl-navigation__link animsition-link" href="masonry.html">Masonry</a>
+                  </div>
+                </div>
+            </div>
+            <div class="mdl-collapse">
+                <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">library_books</i>
+                    <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+                    <span>Blog</span>
+                </a>
+                <div class="mdl-collapse__content-wrapper">
+                  <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
+                    <a class="mdl-navigation__link animsition-link" href="blog.html">Category</a>
+                    <a class="mdl-navigation__link animsition-link" href="article.html">Article</a>
+                  </div>
+                </div>
+            </div>
+            <a class="mdl-navigation__link animsition-link" href="media.html"><i class="material-icons">queue_music</i><span>Media</span></a>
+            <div class="drawer-separator"></div>
+            <div class="mdl-collapse">
+                <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">apps</i>
+                    <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+                    <span>App</span>
+                </a>
+                <div class="mdl-collapse__content-wrapper">
+                  <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
+                    <a class="mdl-navigation__link animsition-link" href="login.html">Login</a>
+                    <a class="mdl-navigation__link animsition-link" href="messages.html">Messages</a>
+                    <a class="mdl-navigation__link animsition-link" href="calendar.html">Calendar</a>
+                    <a class="mdl-navigation__link animsition-link" href="settings.html">Settings</a>
+                  </div>
+                </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Page Content -->
+        <main class="mdl-layout__content settings">
+
+          <p class="title">Wireless & Network</p>
+          <ul>
+            <li>
+              <i class="material-icons">wifi</i> 
+              <span>Wi-Fi</span>
+              <!-- switch -->
+              <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+                <input type="checkbox" id="switch-1" class="mdl-switch__input" checked />
+                <span class="mdl-switch__label"></span>
+              </label>
+              <div class="clr"></div>
+            </li> 
+
+            <li>
+              <i class="material-icons">bluetooth</i>
+              <span>Bluetooth</span>
+              <!-- switch -->
+              <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+                <input type="checkbox" id="switch-2" class="mdl-switch__input" />
+                <span class="mdl-switch__label"></span>
+              </label>
+              <div class="clr"></div>
+            </li>
+
+            <li>
+              <i class="material-icons">data_usage</i>
+              <span>Data usage</span>
+              <!-- switch -->
+              <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-3">
+                <input type="checkbox" id="switch-3" class="mdl-switch__input" />
+                <span class="mdl-switch__label"></span>
+              </label>
+              <div class="clr"></div>
+            </li> 
+          </ul>
+          
+          <p class="title">Device</p>
+
+          <ul>
+            <li>
+              <i class="material-icons">brightness_medium</i>
+              <span>Display</span>
+              <!-- slider -->
+              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="85" tabindex="0"/>
+              <div class="clr"></div>
+            </li> 
+
+            <li>
+              <i class="material-icons">notifications_off</i>
+              <span>Sound</span>
+              <!-- slider -->
+              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="0" tabindex="0"/>
+              <div class="clr"></div>
+            </li>
+
+            <li><i class="material-icons">storage</i><span>Storage</span><div class="clr"></div></li> 
+
+            <li>
+              <i class="material-icons">battery_std</i>
+              <span>Battery</span>
+              <!-- toggle -->
+              <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="setting-toggle-1">
+                <input type="checkbox" id="setting-toggle-1" class="mdl-icon-toggle__input" checked />
+                <i class="mdl-icon-toggle__label material-icons">radio_button_checked</i>
+              </label>
+              <div class="clr"></div>
+            </li>
+
+            <li>
+              <i class="material-icons">apps</i>
+              <span>Apps</span>
+              <!-- toggle -->
+              <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="setting-toggle-2">
+                <input type="checkbox" id="setting-toggle-2" class="mdl-icon-toggle__input" checked />
+                <i class="mdl-icon-toggle__label material-icons">check</i>
+              </label>
+              <div class="clr"></div>
+            </li> 
+
+            <li><i class="material-icons">access_time</i><span>Date & time</span><div class="clr"></div></li>
+
+            <li><i class="material-icons">developer_mode</i><span>Developer options</span><div class="clr"></div></li> 
+          </ul>
+
+          <p class="title">Account</p>
+
+          <ul>
+            <li><i class="material-icons">android</i><span>Google</span><div class="clr"></div></li> 
+
+            <li><i class="material-icons">add</i><span>Add a Account</span><div class="clr"></div></li> 
+          </ul>
+        </main>
+      </div>
+    </div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/js/jquery.animsition.js"></script>
+    <script src="js/sweetalert.min.js"></script> 
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script src="js/function.js"></script>
+  </body>
+</html>
